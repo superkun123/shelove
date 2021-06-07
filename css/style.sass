@@ -1,0 +1,302 @@
+h1,h2,h3
+    font-family: 'Gilroy Regular'
+    font-weight: 400
+
+p, a
+    font-family: 'Gilroy Regular'
+    margin-bottom: 0
+    margin-top: 0
+
+a:hover
+    text-decoration: none
+    color: inherit
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+li 
+    font-family: 'Gilroy Regular' 
+
+
+div 
+   font-family: 'Gilroy Regular' 
+
+
+.slide-banner 
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    object-fit: cover
+    // margin-left: auto
+    // margin-right: auto
+    // left: 0
+    // right: 0
+    // text-align: center
+
+.slide
+    min-height: 520px
+
+
+.slide__text
+    position: relative
+    left: 25%
+    z-index: 10
+    margin-top: 120px
+
+
+.slide__title
+    font-size: 36px
+    margin-bottom: 10px
+    color: #ffffff
+
+
+.slide__subtitle
+    font-size: 18px
+    margin-bottom: 50px
+    color: #fff
+    
+
+.slick-slide
+    position: relative
+
+.slide__price-n-btn
+    display: flex
+
+
+
+.slide__price
+    margin-right: 30px
+
+
+.slide__old-price
+    color: #ffffff
+    opacity: 0.4
+    text-decoration: line-through
+    font-size: 16px
+    margin-bottom: 6px
+
+
+.slide__price-value
+    color: #ffffff
+    font-size: 28px
+    
+
+
+.main-header-slider
+    overflow-x: hidden
+
+
+.main-btn 
+    background: #EA0319
+    color: #ffffff
+    box-shadow: 0px 5px 23px rgba(234, 3, 25, 0.38)
+    border-radius: 100px
+    padding: 17px 85px
+    font-size: 16px
+    display: inline-table
+
+
+.slick-next:before
+    display: none
+
+.slick-next
+    right: 200px
+    width: 60px
+    height: 60px
+    border-radius: 100%
+    background: #EA0319
+    &:hover
+        background: #EA0319
+    &:focus
+        background: #EA0319
+        
+.slick-prev:before
+    display: none
+
+.slick-prev
+    left: 200px
+    width: 60px
+    height: 60px
+    border-radius: 100%
+    color: #EA0319
+    background: #fff
+    z-index: 99
+    &:hover
+        background: #fff
+    &:focus
+        background: #fff
+
+
+
+.category
+    margin-top: 70px
+    margin-bottom: 120px
+
+
+.category-card
+    display: flex
+    align-items: flex-end
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 10px
+    height: 357px
+    margin-bottom: 15px
+    &__text
+        padding-left: 40px
+        padding-bottom: 40px
+    &__title
+        font-size: 24px
+        font-weight: bold
+        margin-bottom: 15px
+        color: #141624
+    &__price
+        color: #141624
+        font-size: 18px
+    &__img
+        height: 100%
+        & img
+            height: 100%
+            max-width: 100%
+            object-fit: cover
+
+
+.product-hit
+    margin-bottom: 150px
+
+.product__title
+    margin-bottom: 60px
+
+.product-card
+    display: block
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.04)
+    border-radius: 10px
+    padding-left: 30px
+    padding-right: 30px
+    border-radius: 10px
+    color: #242424
+
+    &__img
+        text-align: center
+        padding-top: 30px
+        margin-bottom: 30px
+    &__img img
+        max-width: 100%
+
+
+    
+.prodict-card__title 
+    font-size: 18px
+    font-family: "Gilroy Bold"
+    margin-bottom: 20px
+
+
+.product-card__rating
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+.rating-value 
+    color: #EA0319
+    margin-left: 2px
+    font-size: 16px
+
+.rating-star
+    margin-right: 7px
+
+.rating-star-non-active
+    opacity: 0.5
+
+
+.product-card__price-n-btns
+    display: flex
+    justify-content: space-between
+
+
+.product-price
+    margin-bottom: 30px
+
+
+.product-price-value
+    font-size: 20px
+    color: #242424
+
+
+.product-count
+    font-size: 14px
+    color: #141624
+    opacity: 0.3
+
+
+.product-card__btns
+    display: flex
+
+
+.basket-btn
+    height: 40px
+    width: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #E30016
+    box-shadow: 0px 10px 20px rgba(227, 0, 22, 0.1)
+    border-radius: 100%
+    margin-right: 14px
+
+
+.like-btn
+    @extend  .basket-btn
+    margin-right: 0
+    background: #fff
+    box-shadow: none
+    border: 1px solid #EFEFEF
+
+
+
+
+
+     
+
+
+
+
+
+
+@media (min-width: 1440px)
+    .container
+        max-width: 1240px
+
+@media (min-width: 1900px)
+  .container
+     max-width: 1550px
+
+
+@media (max-width: 1440px)
+    .slide__text
+        left: 15%
+
+    .slick-prev
+        left: 100px
+
+    .slick-next
+        right: 100px
+
+    .main-nav__main-menu .main-menu__ul
+        max-width: 100%
+
+
+
+
+
+@font-face
+  font-family: "Gilroy regular"
+  src: url('../assets/fonts/Gilroy-Regular.eot') format("eot"), url('../assets/fonts/Gilroy-Regular.woff') format("woff"), url("../assets/fonts/Gilroy-Regular.ttf") format("ttf")
+
+@font-face
+  font-family: "Gilroy Medium"
+  src: url('../assets/fonts/Gilroy-Medium.eot') format("eot"), url('../assets/fonts/Gilroy-Medium.woff') format("woff"), url("../assets/fonts/Gilroy-Medium.ttf") format("ttf")
+@font-face
+  font-family: "Gilroy Bold"
+  src: url('../assets/fonts/Gilroy-Bold.eot') format("eot"), url('../assets/fonts/Gilroy-Medium.woff') format("woff"), url("../assets/fonts/Gilroy-Bold.ttf") format("ttf")
